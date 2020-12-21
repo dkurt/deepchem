@@ -1,8 +1,8 @@
 name: Test for build scripts
 on:
   push: # ci work when pushing master branch
-    branches:
-      - master
+    # branches:
+    #   - master
   pull_request: # ci work when creating a PR to master branch
     branches:
       - master
