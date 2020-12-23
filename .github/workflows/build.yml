@@ -1,8 +1,8 @@
 name: Test for build scripts
 on:
   push: # ci work when pushing master branch
-    # branches:
-    #   - master
+    branches:
+      - master
   pull_request: # ci work when creating a PR to master branch
     branches:
       - master
@@ -57,6 +57,7 @@ jobs:
         python -c 'import rdkit; print(rdkit.__version__)'
         python -c 'import torch; print(torch.__version__)'
         python -c 'import tensorflow; print(tensorflow.__version__)'
+        python -c 'import openvino.inference_engine as ie; print(ie.__version__)'
 
   powershell-build:
     runs-on: windows-latest
@@ -96,3 +97,4 @@ jobs:
         python -c 'import rdkit; print(rdkit.__version__)'
         python -c 'import torch; print(torch.__version__)'
         python -c 'import tensorflow; print(tensorflow.__version__)'
+        python -c 'import openvino.inference_engine as ie; print(ie.__version__)'
