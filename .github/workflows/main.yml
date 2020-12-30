@@ -4,8 +4,8 @@ on:
     branches:
       - master
   pull_request: # ci work when creating a PR to master branch
-    # branches:
-    #   - master
+    branches:
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
